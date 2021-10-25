@@ -4,80 +4,175 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is my coursera html course</title>
+    <title>This is my course</title>
     <style>
       body {
-        background-color: rgb(255, 255, 255);
-        padding: 50px;
+        margin: 0;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: white;
+      }
+      header {
+        background: rgb(36, 36, 36);
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .Img {
+        padding: 25px 10px 25px 70px;
+        float: left;
+      }
+      .Me {
+        height: 60px;
+        width: auto;
+        border-radius: 50%;
+      }
+      .CenterHeader {
+        color: rgb(255, 255, 255);
+        font-size: x-large;
+        font-weight: bold;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .SecondText {
+        font-size: x-small;
+        color: rgb(212, 212, 212);
+      }
+      .content-page {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .content {
+        background-color: rgb(231, 231, 231);
+        /*float: left;
+        margin: 0px 200px 0px 200px;*/
+      }
+      .html-paragraph {
+        background-color:rgb(228, 228, 228);
+        margin-left: 15px;
+        margin-top: 15px;
+        width: 50%;
+        float: left;
+        left: 80%;
+      }
+      .titulo{
+        background-color: black;
+        color: white;
+        padding-left: 10px;
+      }
+      .menu{
+        display: flex;
+        background: blue;
+      }
+      p, li{
+        padding-left: 20px;
+        padding-right: 10px;
+      }
+      .Resources {
+        background-color: rgb(228, 228, 228);
+        margin-top: 15px;
+        float: left;
+      }
+      .ResourcesList {
+        list-style: none;
+      }
+      /*.Scuare{
+        float: right;*/
       }
     </style>
   </head>
   <body>
-    <h1>This is my html, css and js course</h1>
-    <h2>Git commands</h2>
-    <p>
-      I can use <i><b>git status</b></i> in order to to know if there is
-      something to commit to the repo.<br />I can use <i><b>git add .</b></i> in
-      order to prepare all the changes to be commited.<br />
-      I can use <i><b>git commit -m""</b></i> to commit the changes.<br />
-      I can use <i><b>git push</b></i> to push all the commits in to the repo.
-    </p>
-    <h2>Helpfull resources:</h2>
-    <ul>
-      <li><a href="https://stackoverflow.com/">stackoverflow.com</a></li>
-      <li><a href="https://jsfiddle.net">jsfiddle.net</a></li>
-      <li><a href="https://Css-tricks.com">Css-tricks.com</a></li>
-      <li><a href="https://CodePen.io">CodePen.io</a></li>
-      <li><a href="https://csszengarden.com">csszengarden.com</a></li>
-      <li><a href="https://caniuse.com">caniuse.com</a></li>
-    </ul>
-    <h2>HTML</h2>
-    <p>Hyper<br />Text<br />Markup<br />Language</p>
-    <p>
-      HTML provides the structure of a web page. It gets complement with CSS
-      wich provides styles, and then JavaScript wich provides behaibours.
-      <br />Validate your html <a href="https://validator.w3.org/">here</a>
-    </p>
-    <h2>List</h2>
-    <p>
-      To do a unorder list we can use the label <b>ul</b> or to do an order list
-      <b>ol</b>
-    </p>
-    <p>This is my unordered list:</p>
-    <ul>
-      <li>This is one item in my list</li>
-      <ul>
-        <li>This is a hierarchy unordered list</li>
-        <li>This is a hierarchy unordered list</li>
-      </ul>
-      <li>This is another item</li>
-    </ul>
-    <p>This is my ordererd list:</p>
-    <ol>
-      <li>This is one item in my list</li>
-      <ol>
-        <li>This is a hierarchy ordered list</li>
-        <li>This is a hierarchy ordered list</li>
-      </ol>
-      <li>This is another item</li>
-    </ol>
-    <p>We can mix both type of list:</p>
-    <ul>
-      <li>This is one item in my unordered list</li>
-      <ol>
-        <li>This is a hierarchy ordered list</li>
-        <li>This is a hierarchy ordered list</li>
-      </ol>
-      <li>This is another item</li>
-    </ul>
-    <ol>
-      <li>This is one item in my ordered list</li>
-      <ul>
-        <li>This is a hierarchy unordered list</li>
-        <li>This is a hierarchy unordered list</li>
-      </ul>
-      <li>This is another item</li>
-    </ol>
+    <header class="Header">
+      <div>
+        <div class="Img">
+          <img class="Me" src="/site/ThisIsMe.jpg" alt="This is me" />
+        </div>
+        <div class="CenterHeader">
+          This is my CSS and HTML course
+          <div class="SecondText">By Santiago Cardenas</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-page">
+      <div class="content">
+        <div class="Resources">
+          <h3 class="titulo" >Helpfull Resources</h2>
+          <ul class="ResourcesList">
+            <li class="Menu"><a href="https://stackoverflow.com/">stackoverflow.com</a></li>
+            <li class="Menu"><a href="https://jsfiddle.net">jsfiddle.net</a></li>
+            <li class="Menu"><a href="https://Css-tricks.com">Css-tricks.com</a></li>
+            <li class="Menu"><a href="https://CodePen.io">CodePen.io</a></li>
+            <li class="Menu"><a href="https://csszengarden.com">csszengarden.com</a></li>
+            <li>
+              <a href="https://caniuse.com" target="_blank">caniuse.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="html-paragraph">
+          <h2 class="titulo">HTML</h2>
+          <p>Hyper<br />Text<br />Markup<br />Language</p>
+          <p>
+            HTML provides the structure of a web page. It gets complement with
+            CSS wich provides styles, and then JavaScript wich provides
+            behaibours.
+            <br />You can validate your html
+            <a href="https://validator.w3.org/">here</a>
+          </p>
+          <h2 class="titulo">List</h2>
+          <p>
+            To make an unordered list we can use the label <b>ul</b> or to do an
+            order list
+            <b>ol</b>
+          </p>
+          <p>This is my unordered list:</p>
+          <ul>
+            <li>This is one item in my list</li>
+            <ul>
+              <li>This is a hierarchy unordered list</li>
+              <li>This is a hierarchy unordered list</li>
+            </ul>
+            <li>This is another item</li>
+          </ul>
+          <p>This is my ordered list:</p>
+          <ol>
+            <li>This is one item in my list</li>
+            <ol>
+              <li>This is a hierarchy ordered list</li>
+              <li>This is a hierarchy ordered list</li>
+            </ol>
+            <li>This is another item</li>
+          </ol>
+          <p>We can mix both type of list:</p>
+          <ul>
+            <li>This is one item in my unordered list</li>
+            <ol>
+              <li>This is a hierarchy ordered list</li>
+              <li>This is a hierarchy ordered list</li>
+            </ol>
+            <li>This is another item</li>
+          </ul>
+          <ol>
+            <li>This is one item in my ordered list</li>
+            <ul>
+              <li>This is a hierarchy unordered list</li>
+              <li>This is a hierarchy unordered list</li>
+            </ul>
+            <li>This is another item</li>
+          </ol>
+          <div class="Scuare">
+            <h2 class="titulo">Git commands</h2>
+            <p>
+              I can use <i><b>git status</b></i> in order to to know if there is
+              something to commit to the repo.<br />I can use
+              <i><b>git add .</b></i> in order to prepare all the changes to be
+              commited.<br />
+              I can use <i><b>git commit -m""</b></i> to commit the changes.<br />
+              I can use <i><b>git push</b></i> to push all the commits in to the
+              repo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
