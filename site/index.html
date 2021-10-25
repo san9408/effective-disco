@@ -47,16 +47,19 @@
         margin: 0px 200px 0px 200px;*/
       }
       .html-paragraph {
-        background-color:rgb(228, 228, 228);
+        background-color: rgb(228, 228, 228);
         margin-left: 15px;
         margin-top: 15px;
         width: 50%;
         float: left;
         left: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       .Resources {
         background-color: rgb(228, 228, 228);
+        width: 20%;
         margin-top: 15px;
         float: left;
       }
@@ -67,29 +70,40 @@
       .menu {
         display: flex;
       }
-      .ResourcesList, .Menu-a:link, .Menu-a:visited{
+      .ResourcesList,
+      .Menu-a:link,
+      .Menu-a:visited {
         padding: 0;
         display: block;
         text-decoration: none;
         color: black;
         text-align: center;
         display: block;
-        }
-        
-      .titulo{
-        background-color: black;
+      }
+
+      .Menu-a:hover,
+      .Menu-a:active {
+        background-color: white;
+        color: rgb(36, 36, 36);
+        font-weight: bold;
+      }
+
+      .titulo {
+        background-color: rgb(36, 36, 36);
         color: white;
         padding-left: 10px;
         padding-right: 10px;
+        text-align: center;
       }
-      
-      div + p{
-        padding-left: 20px;
-        padding-right: 10px;
+      .style-list {
+        padding: 0;
+        list-style: none;
+        display: inline;
       }
-      /*.Scuare{
-        float: right;*/
-      
+      .style-listitem {
+        padding-left: 10px;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
@@ -108,21 +122,52 @@
     <div class="content-page">
       <div class="content">
         <div class="Resources">
-          <h3 class="titulo" >Helpfull Resources</h2>
+          <h2 class="titulo">Resources</h2>
           <ul class="ResourcesList">
-            <li class="Menu"><a class="Menu-a" href="https://stackoverflow.com/" target="_blank">stackoverflow.com</a></li>
-            <li class="Menu"><a class="Menu-a" href="https://jsfiddle.net" target="_blank">jsfiddle.net</a></li>
-            <li class="Menu"><a class="Menu-a" href="https://Css-tricks.com" target="_blank">Css-tricks.com</a></li>
-            <li class="Menu"><a class="Menu-a" href="https://CodePen.io" target="_blank">CodePen.io</a></li>
-            <li class="Menu"><a class="Menu-a" href="https://csszengarden.com" target="_blank">csszengarden.com</a></li>
-            <li class="Menu"><a class="Menu-a" href="https://caniuse.com" target="_blank">caniuse.com</a>
+            <li class="Menu">
+              <a
+                class="Menu-a"
+                href="https://stackoverflow.com/"
+                target="_blank"
+                >stackoverflow.com</a
+              >
+            </li>
+            <li class="Menu">
+              <a class="Menu-a" href="https://jsfiddle.net" target="_blank"
+                >jsfiddle.net</a
+              >
+            </li>
+            <li class="Menu">
+              <a class="Menu-a" href="https://Css-tricks.com" target="_blank"
+                >Css-tricks.com</a
+              >
+            </li>
+            <li class="Menu">
+              <a class="Menu-a" href="https://CodePen.io" target="_blank"
+                >CodePen.io</a
+              >
+            </li>
+            <li class="Menu">
+              <a class="Menu-a" href="https://csszengarden.com" target="_blank"
+                >csszengarden.com</a
+              >
+            </li>
+            <li class="Menu">
+              <a class="Menu-a" href="https://caniuse.com" target="_blank"
+                >caniuse.com</a
+              >
             </li>
           </ul>
         </div>
         <div class="html-paragraph">
           <h2 class="titulo">HTML</h2>
-          <ul>
-            <li>Hyper</li><li>Text</li><li>Markup</li><li>Language</ul>
+          <ul class="style-list">
+            <li class="style-listitem">Hyper</li>
+            <li class="style-listitem">Text</li>
+            <li class="style-listitem">Markup</li>
+            <li class="style-listitem">Language</li>
+          </ul>
+
           <p>
             HTML provides the structure of a web page. It gets complement with
             CSS wich provides styles, and then JavaScript wich provides
@@ -132,11 +177,11 @@
           </p>
           <h2 class="titulo">Lists</h2>
           <p>
-            To make an unordered list we can use the label <b>ul</b> or, to make an
-            an ordered list could use as well
+            To make unordered lists we can use the label <b>ul</b> or, to make
+            ordered lists could use as well
             <b>ol</b>
           </p>
-          <p>Unordered list:</p>
+          <p>Unordered lists:</p>
           <ul>
             <li>This is one item in my list</li>
             <ul>
@@ -145,7 +190,7 @@
             </ul>
             <li>This is another item</li>
           </ul>
-          <p>Ordered list:</p>
+          <p>Ordered lists:</p>
           <ol>
             <li>This is one item in my list</li>
             <ol>
@@ -154,7 +199,7 @@
             </ol>
             <li>This is another item</li>
           </ol>
-          <p>We can mix both type of list:</p>
+          <p>We can mix both type of lists:</p>
           <ul>
             <li>This is one item in my unordered list</li>
             <ol>
@@ -174,13 +219,13 @@
           <div class="Scuare">
             <h2 class="titulo">Git commands</h2>
             <p>
-              I can use <i><b>git status</b></i> in order to to know if there is
-              something to commit to the repo.<br />I can use
+              We can use <i><b>git status</b></i> in order to to know if there
+              is something to commit to the repo.<br />We can use
               <i><b>git add .</b></i> in order to prepare all the changes to be
               commited.<br />
-              I can use <i><b>git commit -m""</b></i> to commit the changes.<br />
-              I can use <i><b>git push</b></i> to push all the commits in to the
-              repo.
+              We can use <i><b>git commit -m""</b></i> to commit the changes.<br />
+              We can use <i><b>git push</b></i> to push all the commits in to
+              the repo.
             </p>
           </div>
         </div>
