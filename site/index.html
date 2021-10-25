@@ -36,11 +36,11 @@
         font-size: x-small;
         color: rgb(212, 212, 212);
       }
-      /*.content-page {
+      .content-page {
         width: auto;
         margin-left: auto;
         margin-right: auto;
-      }*/
+      }
       .content {
         background-color: rgb(231, 231, 231);
         /*float: left;
@@ -54,19 +54,7 @@
         float: left;
         left: 80%;
       }
-      .titulo{
-        background-color: black;
-        color: white;
-        padding-left: 10px;
-      }
-      .menu{
-        display: flex;
-        background: blue;
-      }
-      p, li{
-        padding-left: 20px;
-        padding-right: 10px;
-      }
+
       .Resources {
         background-color: rgb(228, 228, 228);
         margin-top: 15px;
@@ -74,10 +62,34 @@
       }
       .ResourcesList {
         list-style: none;
+        padding-left: 0;
+      }
+      .menu {
+        display: flex;
+      }
+      .ResourcesList, .Menu-a:link, .Menu-a:visited{
+        padding: 0;
+        display: block;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        display: block;
+        }
+        
+      .titulo{
+        background-color: black;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      
+      div + p{
+        padding-left: 20px;
+        padding-right: 10px;
       }
       /*.Scuare{
         float: right;*/
-      }
+      
     </style>
   </head>
   <body>
@@ -98,19 +110,19 @@
         <div class="Resources">
           <h3 class="titulo" >Helpfull Resources</h2>
           <ul class="ResourcesList">
-            <li class="Menu"><a href="https://stackoverflow.com/">stackoverflow.com</a></li>
-            <li class="Menu"><a href="https://jsfiddle.net">jsfiddle.net</a></li>
-            <li class="Menu"><a href="https://Css-tricks.com">Css-tricks.com</a></li>
-            <li class="Menu"><a href="https://CodePen.io">CodePen.io</a></li>
-            <li class="Menu"><a href="https://csszengarden.com">csszengarden.com</a></li>
-            <li>
-              <a href="https://caniuse.com" target="_blank">caniuse.com</a>
+            <li class="Menu"><a class="Menu-a" href="https://stackoverflow.com/" target="_blank">stackoverflow.com</a></li>
+            <li class="Menu"><a class="Menu-a" href="https://jsfiddle.net" target="_blank">jsfiddle.net</a></li>
+            <li class="Menu"><a class="Menu-a" href="https://Css-tricks.com" target="_blank">Css-tricks.com</a></li>
+            <li class="Menu"><a class="Menu-a" href="https://CodePen.io" target="_blank">CodePen.io</a></li>
+            <li class="Menu"><a class="Menu-a" href="https://csszengarden.com" target="_blank">csszengarden.com</a></li>
+            <li class="Menu"><a class="Menu-a" href="https://caniuse.com" target="_blank">caniuse.com</a>
             </li>
           </ul>
         </div>
         <div class="html-paragraph">
           <h2 class="titulo">HTML</h2>
-          <p>Hyper<br />Text<br />Markup<br />Language</p>
+          <ul>
+            <li>Hyper</li><li>Text</li><li>Markup</li><li>Language</ul>
           <p>
             HTML provides the structure of a web page. It gets complement with
             CSS wich provides styles, and then JavaScript wich provides
@@ -118,13 +130,13 @@
             <br />You can validate your html
             <a href="https://validator.w3.org/">here</a>
           </p>
-          <h2 class="titulo">List</h2>
+          <h2 class="titulo">Lists</h2>
           <p>
-            To make an unordered list we can use the label <b>ul</b> or to do an
-            order list
+            To make an unordered list we can use the label <b>ul</b> or, to make an
+            an ordered list could use as well
             <b>ol</b>
           </p>
-          <p>This is my unordered list:</p>
+          <p>Unordered list:</p>
           <ul>
             <li>This is one item in my list</li>
             <ul>
@@ -133,7 +145,7 @@
             </ul>
             <li>This is another item</li>
           </ul>
-          <p>This is my ordered list:</p>
+          <p>Ordered list:</p>
           <ol>
             <li>This is one item in my list</li>
             <ol>
