@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   background-color: rgb(202, 202, 202);
   margin: 10px;
   position: relative;
@@ -31,11 +31,11 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  border: 1px solid black;
-  padding: 3px 35px 3px 35px; */
+  border: 1px solid rgb(0, 0, 0);
+  padding: 3px 35px 3px 35px; 
 }
 .sec1 {
-  color: black;
+  color: rgb(0, 0, 0);
   background-color: pink;
 }
 .sec2 {
