@@ -4,10 +4,147 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This is my own restaurant</title>
+    <title>This is my restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header>
+      <!-- Bar and button -->
+      <nav id="header-nav" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand"><h1 id="main-title">Food, LLC</h1></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span id="nav-button" class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            id="nav-list"
+            class="
+              navbar-nav
+              d-block d-sm-block d-md-block d-lg-none
+              text-center
+            "
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#page-subtitle-chicken">Chicken</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#page-subtitle-beef">Beef</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#page-subtitle-sushi">Sushi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2 id="page-title" class="text-center">Our Menu</h2>
+
+      <div id="menu-cards" class="row">
+        <div id="card-container" class="col-lg-4 col-md-6 col-sm-12">
+        <div id="card">
+          <h3 id="page-subtitle-chicken" class="text-center">Chicken</h3>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+            aut saepe dicta, eum distinctio dolorem error tenetur nesciunt odit
+            minima ipsa repudiandae, explicabo nostrum perferendis adipisci ex
+            ipsam pariatur quis. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Error recusandae ipsum ipsa quas maiores corrupti
+            dignissimos? Nobis repudiandae fuga perspiciatis, sint illum,
+            officiis quia obcaecati necessitatibus id quisquam tenetur
+            accusantium. Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Ipsum ex tempora placeat voluptatum similique quod cum
+            accusamus nesciunt quas quibusdam tempore totam, libero deleniti,
+            harum fugiat optio odit, modi eius! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Possimus aut saepe dicta, eum
+            distinctio dolorem error tenetur nesciunt odit minima ipsa
+            repudiandae, explicabo nostrum perferendis adipisci ex ipsam
+            pariatur quis. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Error recusandae ipsum ipsa quas maiores corrupti dignissimos?
+            Nobis repudiandae fuga perspiciatis, sint illum, officiis quia
+            obcaecati necessitatibus id quisquam tenetur accusantium. Lorem
+            ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ex tempora
+            placeat voluptatum similique quod cum accusamus nesciunt quas
+            quibusdam tempore totam, libero deleniti, harum fugiat optio odit,
+            modi eius!
+          </p>
+          <a href="#main-title">Back To Top</a>
+        </div>
+      </div>
+      
+      <div id="card-container" class="col-lg-4 col-md-6 col-sm-12">
+      <div id="card">
+        <h3 id="page-subtitle-beef" class="text-center">Beef</h3>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
+          saepe dicta, eum distinctio dolorem error tenetur nesciunt odit minima
+          ipsa repudiandae, explicabo nostrum perferendis adipisci ex ipsam
+          pariatur quis. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Error recusandae ipsum ipsa quas maiores corrupti dignissimos?
+          Nobis repudiandae fuga perspiciatis, sint illum, officiis quia
+          obcaecati necessitatibus id quisquam tenetur accusantium. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Ipsum ex tempora placeat
+          voluptatum similique quod cum accusamus nesciunt quas quibusdam
+          tempore totam, libero deleniti, harum fugiat optio odit, modi eius!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
+          saepe dicta, eum distinctio dolorem error tenetur nesciunt odit minima
+          ipsa repudiandae, explicabo nostrum perferendis adipisci ex ipsam
+          pariatur quis. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Error recusandae ipsum ipsa quas maiores corrupti dignissimos?
+          Nobis repudiandae fuga perspiciatis, sint illum, officiis quia
+          obcaecati necessitatibus id quisquam tenetur accusantium. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Ipsum ex tempora placeat
+          voluptatum similique quod cum accusamus nesciunt quas quibusdam
+          tempore totam, libero deleniti, harum fugiat optio odit, modi eius!
+        </p>
+        <a href="#main-title">Back To Top</a>
+      </div>
+      </div>
+
+      <div id="card-container" class="col-lg-4 col-md-12 col-sm-12">
+        <div id="card">
+        <h3 id="page-subtitle-sushi" class="text-center">Sushi</h3>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
+          saepe dicta, eum distinctio dolorem error tenetur nesciunt odit minima
+          ipsa repudiandae, explicabo nostrum perferendis adipisci ex ipsam
+          pariatur quis. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Error recusandae ipsum ipsa quas maiores corrupti dignissimos?
+          Nobis repudiandae fuga perspiciatis, sint illum, officiis quia
+          obcaecati necessitatibus id quisquam tenetur accusantium. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Ipsum ex tempora placeat
+          voluptatum similique quod cum accusamus nesciunt quas quibusdam
+          tempore totam, libero deleniti, harum fugiat optio odit, modi eius!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut
+          saepe dicta, eum distinctio dolorem error tenetur nesciunt odit minima
+          ipsa repudiandae, explicabo nostrum perferendis adipisci ex ipsam
+          pariatur quis. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Error recusandae ipsum ipsa quas maiores corrupti dignissimos?
+          Nobis repudiandae fuga perspiciatis, sint illum, officiis quia
+          obcaecati necessitatibus id quisquam tenetur accusantium. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Ipsum ex tempora placeat
+          voluptatum similique quod cum accusamus nesciunt quas quibusdam
+          tempore totam, libero deleniti, harum fugiat optio odit, modi eius!
+        </p>
+        <a href="#main-title">Back To Top</a>
+      </div>
+    </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

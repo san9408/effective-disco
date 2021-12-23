@@ -1,0 +1,52 @@
+body{
+    font-size: 16px;
+    background-color: rgb(194, 194, 194);
+    color: rgb(230, 230, 230);
+    }
+
+#header-nav {
+        background-color: #313131;
+        border: 5px;
+}
+
+#page-title{
+    color:#313131 ;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#nav-list a{
+    background-color: rgb(194, 194, 194);
+    color: #313131;
+}
+#nav-list a:hover{
+    background-color: #313131;
+    color: rgb(235, 235, 235);
+}
+li{
+    border-right: 1px solid silver
+}
+#menu-cards{
+     /* background-color: #313131;*/
+    color: rgb(235, 235, 235); 
+}
+#menu-cards p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+#page-subtitle {
+    padding: 10px;
+    font-weight: 300;
+}
+.text-justify{
+    text-align: justify;
+  text-justify: inter-word;
+}
+#card{
+    background-color: #313131;
+    padding: 20px;
+}
+#card-container{
+    padding: 12px;
+}
